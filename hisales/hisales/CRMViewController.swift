@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  hisales
 //
 //  Created by 王飞 on 15/11/27.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class CRMViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

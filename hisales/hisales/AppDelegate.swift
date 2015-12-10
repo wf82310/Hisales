@@ -16,6 +16,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //get current version
+        let infoDictionary = NSBundle.mainBundle().infoDictionary
+        let currentAppversion = infoDictionary!["CFBundleShortVersionString"] as! String
+       // let appDisplayName:AnyObject? = infoDictionary!["CFBundleDisplayName"]
+      //  let majorVersion :AnyObject? = infoDictionary! ["CFBundleShortVersionString"]
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let appVersion = userDefaults.stringForKey("appVersion")
+        
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // 如果appVersion为nil说明是第一次启动；如果appVersion不等于currentAppVersion说明是更新了
+//        if appVersion == nil || appVersion != currentAppversion {
+//            
+//            userDefaults.setValue(currentAppversion, forKey: "appVersion")
+//            
+//            var guidanceViewController = storyboard.instantiateViewControllerWithIdentifier("GuidanceVC") as! GuidanceViewController
+//            self.window!.rootViewController = guidanceViewController
+//        }
+        
+        
+        userDefaults.setValue(currentAppversion, forKey: "appVersion")
+        
+        var guidanceViewController = storyboard.instantiateViewControllerWithIdentifier("GuidanceVC") as! GuidanceViewController
+        self.window!.rootViewController = guidanceViewController
+
+        
         return true
     }
 
