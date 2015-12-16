@@ -14,6 +14,9 @@
 		DE11035B1C081295001757BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1103591C081295001757BE /* Main.storyboard */; };
 		DE1103601C081295001757BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE11035E1C081295001757BE /* LaunchScreen.xib */; };
 		DE11036C1C081295001757BE /* hisalesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11036B1C081295001757BE /* hisalesTests.swift */; };
+		DE39FD3C1C1FB4E8001BDEFC /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39FD3B1C1FB4E8001BDEFC /* LoginController.swift */; };
+		DE39FD3E1C1FB85D001BDEFC /* GuidanceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE39FD3D1C1FB85D001BDEFC /* GuidanceStoryboard.storyboard */; };
+		DE74AA9C1C19804200F606B1 /* UserLoginProcess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE74AA9B1C19804200F606B1 /* UserLoginProcess.storyboard */; };
 		DE8C88811C10506E00BB67FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8C88801C10506E00BB67FC /* Images.xcassets */; };
 		DE9262E01C102F0C0018A885 /* GuidanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9262DF1C102F0C0018A885 /* GuidanceViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,9 @@
 		DE1103651C081295001757BE /* hisalesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hisalesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE11036A1C081295001757BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE11036B1C081295001757BE /* hisalesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hisalesTests.swift; sourceTree = "<group>"; };
+		DE39FD3B1C1FB4E8001BDEFC /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		DE39FD3D1C1FB85D001BDEFC /* GuidanceStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GuidanceStoryboard.storyboard; sourceTree = "<group>"; };
+		DE74AA9B1C19804200F606B1 /* UserLoginProcess.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UserLoginProcess.storyboard; path = ../UserLoginProcess.storyboard; sourceTree = "<group>"; };
 		DE8C88801C10506E00BB67FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = hisales/Images.xcassets; sourceTree = "<group>"; };
 		DE9262DF1C102F0C0018A885 /* GuidanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,9 +105,12 @@
 			children = (
 				DE1103531C081295001757BE /* AppDelegate.swift */,
 				DE9262DF1C102F0C0018A885 /* GuidanceViewController.swift */,
+				DE39FD3B1C1FB4E8001BDEFC /* LoginController.swift */,
 				DE1103551C081295001757BE /* HomeViewController.swift */,
 				DE1103571C081295001757BE /* CRMViewController.swift */,
 				DE1103591C081295001757BE /* Main.storyboard */,
+				DE74AA9B1C19804200F606B1 /* UserLoginProcess.storyboard */,
+				DE39FD3D1C1FB85D001BDEFC /* GuidanceStoryboard.storyboard */,
 				DE11035E1C081295001757BE /* LaunchScreen.xib */,
 				DE1103511C081295001757BE /* Supporting Files */,
 			);
@@ -227,6 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8C88811C10506E00BB67FC /* Images.xcassets in Resources */,
+				DE39FD3E1C1FB85D001BDEFC /* GuidanceStoryboard.storyboard in Resources */,
+				DE74AA9C1C19804200F606B1 /* UserLoginProcess.storyboard in Resources */,
 				DE11035B1C081295001757BE /* Main.storyboard in Resources */,
 				DE1103601C081295001757BE /* LaunchScreen.xib in Resources */,
 			);
@@ -298,6 +309,7 @@
 				DE1103541C081295001757BE /* AppDelegate.swift in Sources */,
 				DE9262E01C102F0C0018A885 /* GuidanceViewController.swift in Sources */,
 				DE1103561C081295001757BE /* HomeViewController.swift in Sources */,
+				DE39FD3C1C1FB4E8001BDEFC /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

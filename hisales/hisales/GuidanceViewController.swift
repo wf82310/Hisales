@@ -79,13 +79,16 @@ class GuidanceViewController: UIViewController {
     
     @IBAction func regist(sender: AnyObject) {
         //regist action
+        
+       
+
     }
     
     
     @IBAction func start(sender: AnyObject) {
         //login with existing account
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewControllerWithIdentifier("HomeVC") as! HomeViewController
+        let storyboard = UIStoryboard(name: "UserLoginProcess", bundle: nil)
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("UserLoginVC") as! LoginController
         
         viewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         presentViewController(viewController, animated: true, completion: nil)

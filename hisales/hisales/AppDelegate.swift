@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let appVersion = userDefaults.stringForKey("appVersion")
         
-        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "GuidanceStoryboard", bundle: nil)
         
         // 如果appVersion为nil说明是第一次启动；如果appVersion不等于currentAppVersion说明是更新了
 //        if appVersion == nil || appVersion != currentAppversion {
@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         userDefaults.setValue(currentAppversion, forKey: "appVersion")
         
-        var guidanceViewController = storyboard.instantiateViewControllerWithIdentifier("GuidanceVC") as! GuidanceViewController
+        let guidanceViewController = storyboard.instantiateViewControllerWithIdentifier("GuidanceVC") as! GuidanceViewController
         self.window!.rootViewController = guidanceViewController
 
         
